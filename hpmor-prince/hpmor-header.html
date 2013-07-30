@@ -8,17 +8,30 @@ body {
 	font-family: "Garamond Premier Pro", "Adobe Garamond Pro", "Garamond";
 	text-align: justify;
 }
-h1, h2, h3 {
+.sequence-break {
+    text-align: center;
+    font-size: 26pt;
+    font-family: Lumos;
+	text-transform: uppercase;
+    margin: 1em auto;
+}
+h1, h2, h3, h4, h5 {
 	text-align: center;
 	font-family: Lumos;
 	text-transform: uppercase;
 }
+h1 {font-size: 40pt;}
+h2 {font-size: 40pt;}
+h3 {font-size: 30pt;}
+h4 {font-size: 50pt;}
+h5 {font-size: 20pt;}
 p + p {
 	text-indent: 1em;
 }
 p.credits {
 	text-align: center;
 	font-family: Lumos;
+    font-size: 20pt;
 }
 a {
 	text-decoration: none;
@@ -30,11 +43,33 @@ hr, div.sep {
 	margin: 1em auto;
 	width: 10em;
 }
+img {
+    margin: 1em auto;
+    text-align: center;
+    display: block;
+}
 #toc {
 	list-style-type: none; 
 	padding: 0;
 	width: 25em;
 	margin: 0 auto;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    font-size: 18pt;
+}
+
+.center {
+    display: block
+	padding: 0;
+	width: 35em;
+	margin: 0 auto;
+    text-align: center;
+}
+
+.white {
+    color: white;
+    font-family: "Garamond Premier Pro";
+    font-weight:normal;
 }
 
 @media print {
@@ -46,13 +81,15 @@ hr, div.sep {
 		margin: 0;
 	}
 	@page {
-		size: 6in 9in;
+		size: US-Letter;
 	}
 	@page:left {margin: 0.875in 0.75in 0.875in 0.625in;} 
 	@page:right {margin: 0.875in 0.625in 0.875in 0.75in;} 
 
 	@page:first {
-		margin-top: 2in;
+		margin-top: 1in;
+        background: black url("stars.jpg") center repeat;
+        color: #FFFFFF;
 	}
 	@page chapter {
 		@top {
@@ -108,5 +145,98 @@ window.onload = function() {
 </script>
 </head>
 <body>
-<h1>Harry Potter and the Methods of Rationality</h1>
-<p class="credits">by LessWrong</p>
+<h1 class="white" style="margin-top:0em;margin-bottom:0em;">Harry Potter and the</h1>
+<h1 class="white" style="font-size:70pt; color: GoldenRod;margin-top:0em;margin-bottom:0em;">Methods of Rationality</h1><br/>
+<h4 class="white" style="margin-top:0em;margin-bottom:0em;">Volume %(volume)s</h4><br/>
+<h4 class="white" style="font-size:30pt;padding:0px;margin-top:0em;margin-bottom:0em;">Chapters %(start)d-%(finish)d</h4><br/>
+<img src="hpmor.png" />
+<p class="credits white">by Eliezer Yudkowsky</p>
+<h2></h2>
+<br/><br/><br/><br/><br/>
+<p class="center">Based on the characters of</p>
+<p style="font-size:20pt;text-align: center;">J. K. Rowling</p>
+<p class="center">and her books:</p>
+<p class="center">
+<em>Harry Potter and the Sorcerer's Stone</em><br/>
+Year One at Hogwarts<br/>
+<em>Harry Potter and the Chamber of Secrets</em><br/>
+Year Two at Hogwarts<br/>
+<em>Harry Potter and the Prisoner of Azkaban</em><br/>
+Year Three at Hogwarts<br/>
+<em>Harry Potter and the Goblet of Fire</em><br/>
+Year Four at Hogwarts<br/>
+<em>Harry Potter and the Order of the Phoenix</em><br/>
+Year Five at Hogwarts<br/>
+<em>Harry Potter and the Half-Blood Prince</em><br/>
+Year Six at Hogwarts<br/>
+<em>Harry Potter and the Deathly Hallows</em><br/>
+Year Seven at Hogwarts<br/>
+</p>
+<h2></h2>
+<p style="text-align:center;">
+     <em>
+      Something, somewhere, somewhen,
+must have happened differently...
+     </em>
+    </p>
+    <p>
+     PETUNIA EVANS married Michael Verres, a Professor of
+Biochemistry at Oxford.
+    </p>
+    <p>
+     HARRY JAMES POTTER-EVANS-VERRES grew up in a house filled to the
+brim with books. He once bit a math teacher who didn't know what a
+logarithm was. He's read
+     <em>
+      Godel, Escher, Bach
+     </em>
+     and
+     <em>
+      Judgment Under Uncertainty: Heuristics and Biases
+     </em>
+     and
+volume one of
+     <em>
+      The Feynman Lectures on Physics.
+     </em>
+     And despite
+what everyone who's met him seems to fear, he doesn't want to
+become the next Dark Lord. He was raised better than that. He wants
+to discover the laws of magic and become a god.
+    </p>
+    <p>
+     HERMIONE GRANGER is doing better than him in every class except
+broomstick riding.
+    </p>
+    <p>
+     DRACO MALFOY is exactly what you would expect an eleven-year-old
+boy to be like if Darth Vader were his doting father.
+    </p>
+    <p>
+     PROFESSOR QUIRRELL is living his lifelong dream of teaching
+Defense Against the Dark Arts, or as he prefers to call his class,
+Battle Magic. His students are all wondering what's going to go
+wrong with the Defense Professor this time.
+    </p>
+    <p>
+     DUMBLEDORE is either insane, or playing some vastly deeper game
+which involved setting fire to a chicken.
+    </p>
+    <p>
+     DEPUTY HEADMISTRESS MINERVA MCGONAGALL needs to go off somewhere
+private and scream for a while.
+    </p>
+    <p style="text-align:center;">
+     Presenting:
+    </p>
+    <p style="text-align:center;">
+     HARRY POTTER AND THE METHODS OF
+RATIONALITY
+    </p>
+    <p style="text-align:center;">
+     You ain't guessin' where this one's
+going.
+    </p>
+    <p style="text-align:center;">
+    All text taken from http://www.hpmor.com.
+    </p>
